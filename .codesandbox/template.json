@@ -1,0 +1,7 @@
+{
+  "title": "Kurocado Studio NPM template",
+  "description": "The official NPM template used by Kurocado Studio",
+  "iconUrl": "https://raw.githubusercontent.com/kurocado-studio/styleguide-npm-template/main/.codesandbox/icon.png",
+  "tags": ["npm", "starter", "typescript", "kurocado studio"],
+  "published": true
+}

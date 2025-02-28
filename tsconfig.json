@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "extends": [
+    "@kurocado-studio/qa/npm/tsconfig.qa",
+    "@kurocado-studio/styleguide/remix/tsconfig"
+  ],
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "rootDir": ".",
+    "baseUrl": ".",
+    "jsx": "preserve"
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "setup.npm.ts",
+    "tailwind.config.ts",
+    "test/**/*.test.ts",
+    "test/**/*.test.tsx",
+    "tsup.config.ts",
+    "vitest.config.ts"
+  ],
+  "exclude": ["node_modules"]
+}

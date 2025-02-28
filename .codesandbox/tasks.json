@@ -1,0 +1,61 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "command": "pnpm install",
+      "name": "Installing Dependencies"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "build": {
+      "name": "build",
+      "command": "pnpm build"
+    },
+    "commitlint": {
+      "name": "commitlint",
+      "command": "pnpm commitlint"
+    },
+    "eslint": {
+      "name": "eslint",
+      "command": "pnpm eslint"
+    },
+    "eslint-check": {
+      "name": "eslint-check",
+      "command": "pnpm eslint-check"
+    },
+    "eslint-fix": {
+      "name": "eslint-fix",
+      "command": "pnpm eslint-fix"
+    },
+    "lint": {
+      "name": "lint",
+      "command": "pnpm lint"
+    },
+    "prepare": {
+      "name": "prepare",
+      "command": "pnpm prepare"
+    },
+    "prettier-check": {
+      "name": "prettier-check",
+      "command": "pnpm prettier-check"
+    },
+    "prettier-fix": {
+      "name": "prettier-fix",
+      "command": "pnpm prettier-fix"
+    },
+    "semantic-release": {
+      "name": "semantic-release",
+      "command": "pnpm semantic-release"
+    },
+    "test": {
+      "name": "test",
+      "command": "pnpm test"
+    },
+    "typecheck": {
+      "name": "typecheck",
+      "command": "pnpm typecheck"
+    }
+  }
+}
