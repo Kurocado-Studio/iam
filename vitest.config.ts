@@ -6,6 +6,6 @@
  *
  * Explore our open-source projects: {@link https://github.com/kurocado-studio}
  */
-import { defineConfig, vitestNpm } from '@kurocado-studio/qa';
+import { defineConfig, vitestRemix } from '@kurocado-studio/qa';
 
-export default defineConfig(vitestNpm);
+export default defineConfig(vitestRemix);
