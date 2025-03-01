@@ -8,7 +8,7 @@
  */
 import {
   defineESLintConfig,
-  eslintNodeConfig,
+  eslintReactConfig,
 } from '@kurocado-studio/styleguide';
 
-export default defineESLintConfig(eslintNodeConfig);
+export default defineESLintConfig(eslintReactConfig);

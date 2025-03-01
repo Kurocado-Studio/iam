@@ -6,7 +6,7 @@ const tsupOptions: Options = {
   dts: true,
   entry: ['src/index.ts', 'src/remix/setup.npm.ts'],
   external: ['react'],
-  format: ['esm', 'cjs'],
+  format: ['esm'],
   sourcemap: true,
   splitting: true,
   target: 'node20',
