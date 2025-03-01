@@ -26,11 +26,6 @@ jobs:
     uses: kurocado-studio/dev-ops/.github/workflows/workflow.test.yml@main
     secrets: inherit
 
-  document:
-    needs: test
-    uses: kurocado-studio/dev-ops/.github/workflows/workflow.document.yml@main
-    secrets: inherit
-
   release:
     needs: test
     uses: kurocado-studio/dev-ops/.github/workflows/workflow.release.yml@main
