@@ -1,8 +1,8 @@
 import type { Auth0ContextInterface } from '@auth0/auth0-react';
 
 export interface AuthOktaUserAdapter {
-  toUser: (authOktaUser: AuthOktaUser) => User;
-  toUserToken: (authOktaToken: AuthOktaToken) => UserToken;
+  toUser: (authOktaUser?: Partial<AuthOktaUser>) => User;
+  toUserToken: (authOktaToken?: Partial<AuthOktaToken>) => UserToken;
 }
 
 export interface UserAdapter {
@@ -11,7 +11,9 @@ export interface UserAdapter {
 
 export interface UserAccessTokenSilentlyOptions {
   cacheMode?: 'on' | 'off' | 'cache-only';
-  authorizationParams?: {
+  domain: string;
+  clientId: string;
+  authorizationParams: {
     redirect_uri?: string;
     scope?: string;
     audience?: string;
@@ -23,8 +25,13 @@ export interface UserAccessTokenSilentlyOptions {
 
 export type UseAccessTokenSilentlyResponse = Pick<
   Auth0ContextInterface<User>,
-  'isAuthenticated' | 'isLoading' | 'error' | 'user'
-> & { userToken: UserToken };
+  | 'error'
+  | 'isAuthenticated'
+  | 'isLoading'
+  | 'loginWithRedirect'
+  | 'logout'
+  | 'user'
+> & { userToken: UserToken; user: User };
 
 export type AuthOktaToken = {
   id_token: string;
@@ -43,26 +50,26 @@ export interface UserToken {
 }
 
 export interface AuthOktaUser {
-  name?: string;
-  given_name?: string;
-  family_name?: string;
-  middle_name?: string;
-  nickname?: string;
-  preferred_username?: string;
-  profile?: string;
-  picture?: string;
-  website?: string;
-  email?: string;
-  email_verified?: boolean;
-  gender?: string;
-  birthdate?: string;
-  zoneinfo?: string;
-  locale?: string;
-  phone_number?: string;
-  phone_number_verified?: boolean;
-  address?: string;
-  updated_at?: string;
-  sub?: string;
+  name: string;
+  given_name: string;
+  family_name: string;
+  middle_name: string;
+  nickname: string;
+  preferred_username: string;
+  profile: string;
+  picture: string;
+  website: string;
+  email: string;
+  email_verified: boolean;
+  gender: string;
+  birthdate: string;
+  zoneinfo: string;
+  locale: string;
+  phone_number: string;
+  phone_number_verified: boolean;
+  address: string;
+  updated_at: string;
+  sub: string;
   [key: string]: any;
 }
 

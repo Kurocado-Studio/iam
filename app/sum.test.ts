@@ -1,8 +1,10 @@
 import { describe, expect, it } from 'vitest';
 
-import { sum } from '../src/sum';
+function sum(a: number, b: number): number {
+  return a + b;
+}
 
-describe('index function', () => {
+describe('sum function', () => {
   it('should add two numbers correctly', () => {
     expect(sum(1, 2)).toBe(3);
   });

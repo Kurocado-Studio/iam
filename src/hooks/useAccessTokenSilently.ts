@@ -1,5 +1,5 @@
 import { useAuth0 } from '@auth0/auth0-react';
-import { useEffect, useMemo, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import { OktaUserAdapter } from '../domain/adapters';
 import type {
@@ -13,35 +13,54 @@ import type {
 export const useAccessTokenSilently = (
   options: UserAccessTokenSilentlyOptions,
 ): UseAccessTokenSilentlyResponse => {
-  const { toUser, toUserToken } = new OktaUserAdapter();
+  const { toUser, toUserToken } = OktaUserAdapter.create();
 
-  const { error, isLoading, isAuthenticated, getAccessTokenSilently, user } =
-    useAuth0<AuthOktaUser>();
+  const {
+    error,
+    getAccessTokenSilently,
+    isAuthenticated,
+    isLoading,
+    loginWithRedirect,
+    logout,
+    user,
+  } = useAuth0<AuthOktaUser>();
 
   const [userToken, setUserToken] = useState<UserToken>(toUserToken());
 
   useEffect(() => {
     const fetchToken = async (): Promise<void> => {
-      const payload: AuthOktaToken = await getAccessTokenSilently({
-        ...options,
-        detailedResponse: true,
-      });
+      try {
+        const payload: AuthOktaToken = await getAccessTokenSilently({
+          ...options,
+          detailedResponse: true,
+        });
 
-      setUserToken(toUserToken(payload));
+        const userToken = toUserToken(payload);
+        setUserToken(userToken);
+      } catch (e) {
+        loginWithRedirect(options).then();
+      }
     };
 
-    fetchToken().then();
+    if (!isAuthenticated && !isLoading) {
+      fetchToken().then();
+    }
+  }, [
+    getAccessTokenSilently,
+    isAuthenticated,
+    isLoading,
+    loginWithRedirect,
+    options,
+    toUserToken,
+  ]);
 
-    return () => setUserToken(toUserToken());
-  }, [getAccessTokenSilently, options, setUserToken, toUserToken]);
-
-  return useMemo(() => {
-    return {
-      error,
-      isLoading,
-      isAuthenticated,
-      userToken,
-      user: toUser(user),
-    };
-  }, [error, isAuthenticated, isLoading, toUser, user, userToken]);
+  return {
+    error,
+    isAuthenticated,
+    isLoading,
+    loginWithRedirect,
+    logout,
+    userToken,
+    user: toUser(user),
+  };
 };

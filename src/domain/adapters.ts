@@ -11,7 +11,8 @@ import type {
 } from './types';
 
 export class OktaUserAdapter implements AuthOktaUserAdapter {
-  toUser = (authOktaUser?: AuthOktaUser): User => {
+  public static create = (): AuthOktaUserAdapter => new OktaUserAdapter();
+  toUser = (authOktaUser?: Partial<AuthOktaUser>): User => {
     const orgUser = {
       address: get(authOktaUser, ['address']),
       birthdate: get(authOktaUser, ['birthdate']),
