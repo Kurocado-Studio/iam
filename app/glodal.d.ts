@@ -45,6 +45,11 @@ declare module '*.css' {
   export default content;
 }
 
+declare module '*css.?url' {
+  const content: string; // Assuming it's a URL string
+  export default content;
+}
+
 interface ImportMetaEnv {
   readonly VITE_AUTH_DOMAIN: string;
   readonly VITE_AUTH_CLIENT_ID: string;

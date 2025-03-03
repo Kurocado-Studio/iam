@@ -8,7 +8,7 @@ import {
   Scripts,
   ScrollRestoration,
 } from '@remix-run/react';
-import React from 'react';
+import * as React from 'react';
 
 import { AuthAccessSilentlyProvider } from '../src';
 // @see https://remix.run/docs/en/main/styling/tailwind

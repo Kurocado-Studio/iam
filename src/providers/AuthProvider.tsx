@@ -1,4 +1,3 @@
-import { type Auth0ProviderOptions } from '@auth0/auth0-react';
 import { Auth0Provider } from '@auth0/auth0-react';
 import * as React from 'react';
 
@@ -6,9 +5,7 @@ import { OrgUser } from '../domain/models';
 import type { User, UserAccessTokenSilentlyOptions } from '../domain/types';
 import { useAccessTokenSilently } from '../hooks/useAccessTokenSilently';
 
-export interface AuthProviderProps
-  extends Omit<Auth0ProviderOptions, 'children'>,
-    UserAccessTokenSilentlyOptions {
+export interface AuthProviderProps extends UserAccessTokenSilentlyOptions {
   children: React.FC<{
     isLoading: boolean;
     isAuthenticated: boolean;
@@ -56,9 +53,7 @@ export function AuthAccessSilently({
       >
         Log Out
       </button>
-
       {children({ isLoading, isAuthenticated, user })}
-      <pre>{JSON.stringify({ isLoading, user }, null, 2)}</pre>
     </AuthAccessSilentlyContext.Provider>
   );
 }

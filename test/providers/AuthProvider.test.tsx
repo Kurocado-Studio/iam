@@ -1,56 +1,46 @@
+import { faker } from '@faker-js/faker';
 import { ReactTestingLibrary } from '@kurocado-studio/qa';
 import * as React from 'react';
+import { vi } from 'vitest';
 
-import { AuthAccessSilentlyProvider } from '../../src';
+import { AuthAccessSilentlyProvider, type AuthProviderProps } from '../../src';
 
 const { screen, render } = ReactTestingLibrary;
 
-describe('AuthProvider', () => {
-  let container: HTMLElement;
+function TestAuthAccessSilentlyProvider(
+  props: AuthProviderProps,
+): React.ReactNode {
+  return (
+    <AuthAccessSilentlyProvider {...props}>
+      {({ isLoading }) =>
+        isLoading ? <h1>Loading...</h1> : <h1>Hello User!</h1>
+      }
+    </AuthAccessSilentlyProvider>
+  );
+}
+
+describe('AuthAccessSilentlyProvider', () => {
+  let auth0ProviderParams: AuthProviderProps;
 
   afterEach(() => {
     vi.restoreAllMocks();
   });
 
   beforeEach(() => {
-    container = document.createElement('div');
-    const auth0ProviderParams = {
-      clientId: '',
-      domain: '',
+    auth0ProviderParams = {
+      clientId: faker.string.uuid(),
+      domain: faker.string.uuid(),
       authorizationParams: {
-        redirect_uri: '',
-        prompt: 'login',
+        redirect_uri: faker.internet.domainName(),
+      },
+      children: ({ isLoading }) => {
+        return isLoading ? <h1>Loading...</h1> : <h1>Hello User!</h1>;
       },
     };
-
-    render(
-      <AuthAccessSilentlyProvider {...auth0ProviderParams}>
-        <h1>Hello, World!</h1>
-      </AuthAccessSilentlyProvider>,
-    );
   });
 
-  it('renders the component into the DOM with correct props', () => {
-    // vi.spyOn(OktaSdk, 'useAuth0').mockImplementationOnce(() => {
-    //   return {
-    //     error: undefined,
-    //     isAuthenticated: true,
-    //     isLoading: false,
-    //     getAccessTokenSilently: vi.fn(),
-    //     loginWithRedirect: vi.fn(),
-    //     getAccessTokenWithPopup: vi.fn(),
-    //     getIdTokenClaims: vi.fn(),
-    //     loginWithPopup: vi.fn(),
-    //     logout: vi.fn(),
-    //     handleRedirectCallback: vi.fn(),
-    //   };
-    // });
-
-    expect(container.querySelector('h1')?.textContent).toBe('Hello, World!');
-  });
-
-  it('renders the component into the DOM with correct props', () => {
-    screen.debug();
-    expect(container.querySelector('h1')?.textContent).toBe('Hello, World!');
+  it('lets the user know the provider is trying to login the user', () => {
+    render(<TestAuthAccessSilentlyProvider {...auth0ProviderParams} />);
+    expect(screen.getByText(/Loading.../i)).toBeDefined();
   });
 });
