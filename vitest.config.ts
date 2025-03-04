@@ -1,11 +1,13 @@
-/**
- * Made with ❤️ and adobo by Kurocado Studio
- * Copyright (c) 2024. All Rights Reserved.
- *
- * Learn more about Kurocado Studio: {@link https://www.kurocado.studio}
- *
- * Explore our open-source projects: {@link https://github.com/kurocado-studio}
- */
 import { defineConfig, vitestRemix } from '@kurocado-studio/qa';
 
-export default defineConfig(vitestRemix);
+export default defineConfig({
+  ...vitestRemix,
+  test: {
+    ...vitestRemix.test,
+    coverage: {
+      ...vitestRemix.test?.coverage,
+      // @ts-ignore type-mismatch
+      include: ['src/**/*.{ts,tsx}'],
+    },
+  },
+});

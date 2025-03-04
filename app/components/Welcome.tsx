@@ -1,6 +1,10 @@
 import * as React from 'react';
 
+import { useAuthAccessSilently } from '../../src';
+
 export function Welcome(): React.ReactNode {
+  const { logOut } = useAuthAccessSilently();
+
   return (
     <main className='bg-white'>
       <article className='mx-auto max-w-2xl px-6 py-24 text-center sm:px-6 sm:py-32 lg:px-8'>
@@ -17,6 +21,15 @@ export function Welcome(): React.ReactNode {
           >
             Learn more about Auth0 by Okta
           </a>
+        </div>
+        <div className='mt-10 flex items-center justify-center gap-x-6'>
+          <button
+            className='rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600'
+            type='button'
+            onClick={logOut}
+          >
+            Log me out
+          </button>
         </div>
       </article>
     </main>

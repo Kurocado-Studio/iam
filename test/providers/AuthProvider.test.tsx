@@ -21,17 +21,24 @@ function TestAuthAccessSilentlyProvider(
 
 describe('AuthAccessSilentlyProvider', () => {
   let auth0ProviderParams: AuthProviderProps;
+  let domainName: string;
+  let clientId: string;
+  let domain: string;
 
   afterEach(() => {
     vi.restoreAllMocks();
   });
 
   beforeEach(() => {
+    clientId = faker.string.uuid();
+    domain = faker.string.uuid();
+    domainName = faker.internet.domainName();
+
     auth0ProviderParams = {
-      clientId: faker.string.uuid(),
-      domain: faker.string.uuid(),
+      clientId,
+      domain,
       authorizationParams: {
-        redirect_uri: faker.internet.domainName(),
+        redirect_uri: domainName,
       },
       children: ({ isLoading }) => {
         return isLoading ? <h1>Loading...</h1> : <h1>Hello User!</h1>;

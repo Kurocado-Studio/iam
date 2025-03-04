@@ -12,6 +12,7 @@ import type {
 
 export class OktaUserAdapter implements AuthOktaUserAdapter {
   public static create = (): AuthOktaUserAdapter => new OktaUserAdapter();
+
   toUser = (authOktaUser?: Partial<AuthOktaUser>): User => {
     const orgUser = {
       address: get(authOktaUser, ['address']),
@@ -53,6 +54,8 @@ export class OktaUserAdapter implements AuthOktaUserAdapter {
 }
 
 export class OrgUserAdapter implements UserAdapter {
+  public static create = (): UserAdapter => new OrgUserAdapter();
+
   toAuthOktaUser = (user: Partial<User>): AuthOktaUser => {
     const oktaUser = {
       address: get(user, ['address']),

@@ -1,4 +1,4 @@
-import { Auth0Provider } from '@auth0/auth0-react';
+import { Auth0Provider, type LogoutOptions } from '@auth0/auth0-react';
 import * as React from 'react';
 
 import { OrgUser } from '../domain/models';
@@ -18,17 +18,18 @@ export interface AuthProviderProps extends UserAccessTokenSilentlyOptions {
 export interface AuthSilentlyContext {
   isAuthenticated: boolean;
   isLoading: boolean;
+  logOut: (options?: LogoutOptions) => Promise<void>;
   user: User;
 }
 
-export const AuthAccessSilentlyContext =
-  React.createContext<AuthSilentlyContext>({
-    isAuthenticated: false,
-    isLoading: true,
-    user: OrgUser.create(),
-  });
+const AuthAccessSilentlyContext = React.createContext<AuthSilentlyContext>({
+  isAuthenticated: false,
+  isLoading: true,
+  logOut: () => Promise.resolve(),
+  user: OrgUser.create(),
+});
 
-export function AuthAccessSilently({
+function AuthAccessSilently({
   children,
   ...restAuthProviderOpts
 }: AuthProviderProps): React.ReactNode {
@@ -39,20 +40,11 @@ export function AuthAccessSilently({
     isAuthenticated,
     isLoading,
     user,
+    logOut: logout,
   };
 
   return (
     <AuthAccessSilentlyContext.Provider value={authAccess}>
-      <button
-        type='button'
-        onClick={(): Promise<void> => {
-          return logout({
-            logoutParams: { returnTo: window.location.origin },
-          });
-        }}
-      >
-        Log Out
-      </button>
       {children({ isLoading, isAuthenticated, user })}
     </AuthAccessSilentlyContext.Provider>
   );
@@ -70,3 +62,6 @@ export function AuthAccessSilentlyProvider({
     </Auth0Provider>
   );
 }
+
+export const useAuthAccessSilently = (): AuthSilentlyContext =>
+  React.useContext(AuthAccessSilentlyContext);

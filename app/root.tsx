@@ -58,16 +58,13 @@ export function Layout({
             authorizationParams={{ redirectUri }}
           >
             {({ isLoading, isAuthenticated }) => {
-              switch (true) {
-                case isAuthenticated && !isLoading:
-                  return children;
-                case isLoading:
-                  return <p>Loading...</p>;
-                case true:
-                  return null;
-                default:
-                  return null;
+              if (isAuthenticated && !isLoading) {
+                return children;
               }
+              if (isLoading) {
+                return <p>Loading...</p>;
+              }
+              return null;
             }}
           </AuthAccessSilentlyProvider>
           <Scripts />
