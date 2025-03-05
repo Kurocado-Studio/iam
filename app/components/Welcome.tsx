@@ -1,9 +1,9 @@
 import * as React from 'react';
 
-import { useAuthAccessSilently } from '../../src';
+import { useAuthSilentlyContext } from '../../src';
 
 export function Welcome(): React.ReactNode {
-  const { logOut } = useAuthAccessSilently();
+  const { logOut } = useAuthSilentlyContext();
 
   return (
     <main className='bg-white'>
