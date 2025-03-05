@@ -46,7 +46,7 @@ declare module '*.css' {
 }
 
 declare module '*css.?url' {
-  const content: string; // Assuming it's a URL string
+  const content: string;
   export default content;
 }
 

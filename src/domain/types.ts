@@ -23,7 +23,7 @@ export interface UserAccessTokenSilentlyOptions {
   detailedResponse?: boolean;
 }
 
-export type UseAccessTokenSilentlyResponse = Pick<
+export type UseAccessTokenSilentlyState = Pick<
   Auth0ContextInterface<User>,
   | 'error'
   | 'isAuthenticated'
@@ -31,7 +31,11 @@ export type UseAccessTokenSilentlyResponse = Pick<
   | 'loginWithRedirect'
   | 'logout'
   | 'user'
-> & { userToken: UserToken; user: User };
+> & {
+  userToken: UserToken;
+  user: User;
+  handleGetAccessTokenSilently: () => Promise<void>;
+};
 
 export type AuthOktaToken = {
   id_token: string;

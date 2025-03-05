@@ -1,18 +1,18 @@
 import { useAuth0 } from '@auth0/auth0-react';
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 
 import { OktaUserAdapter } from '../domain/adapters';
 import type {
   AuthOktaToken,
   AuthOktaUser,
-  UseAccessTokenSilentlyResponse,
+  UseAccessTokenSilentlyState,
   UserAccessTokenSilentlyOptions,
   UserToken,
 } from '../domain/types';
 
 export const useAccessTokenSilently = (
   options: UserAccessTokenSilentlyOptions,
-): UseAccessTokenSilentlyResponse => {
+): UseAccessTokenSilentlyState => {
   const { toUser, toUserToken } = OktaUserAdapter.create();
 
   const {
@@ -27,32 +27,25 @@ export const useAccessTokenSilently = (
 
   const [userToken, setUserToken] = useState<UserToken>(toUserToken());
 
-  useEffect(() => {
-    const fetchToken = async (): Promise<void> => {
-      try {
-        const payload: AuthOktaToken = await getAccessTokenSilently({
-          ...options,
-          detailedResponse: true,
-        });
+  const handleGetAccessTokenSilently = useCallback(async () => {
+    try {
+      const payload: AuthOktaToken = await getAccessTokenSilently({
+        ...options,
+        detailedResponse: true,
+      });
 
-        const userToken = toUserToken(payload);
-        setUserToken(userToken);
-      } catch (e) {
-        loginWithRedirect(options).then();
-      }
-    };
-
-    if (!isAuthenticated && !isLoading) {
-      fetchToken().then();
+      const userToken = toUserToken(payload);
+      setUserToken(userToken);
+    } catch (e) {
+      loginWithRedirect(options).then();
     }
-  }, [
-    getAccessTokenSilently,
-    isAuthenticated,
-    isLoading,
-    loginWithRedirect,
-    options,
-    toUserToken,
-  ]);
+  }, [getAccessTokenSilently, loginWithRedirect, options, toUserToken]);
+
+  useEffect(() => {
+    if (!isAuthenticated && !isLoading) {
+      handleGetAccessTokenSilently().then();
+    }
+  }, [handleGetAccessTokenSilently, isAuthenticated, isLoading]);
 
   return {
     error,
@@ -61,6 +54,7 @@ export const useAccessTokenSilently = (
     loginWithRedirect,
     logout,
     userToken,
+    handleGetAccessTokenSilently,
     user: toUser(user),
   };
 };
