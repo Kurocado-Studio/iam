@@ -24,7 +24,7 @@ export class OktaUser implements AuthOktaUser {
   website: string;
   zoneinfo: string;
 
-  constructor(user: Partial<AuthOktaUser>) {
+  private constructor(user: Partial<AuthOktaUser>) {
     this.address = get(user, ['address'], '');
     this.birthdate = get(user, ['birthdate'], '');
     this.email = get(user, ['email'], '');
@@ -109,7 +109,7 @@ export class OrgUserToken implements UserToken {
   refreshToken: string;
   scope: string;
 
-  constructor(token: Partial<UserToken>) {
+  private constructor(token?: Partial<UserToken>) {
     this.accessToken = get(token, ['accessToken'], '');
     this.expiresIn = get(token, ['expiresIn'], 0);
     this.idToken = get(token, ['idToken'], '');
@@ -117,7 +117,7 @@ export class OrgUserToken implements UserToken {
     this.scope = get(token, ['scope'], '');
   }
 
-  public static create = (token: Partial<UserToken>): UserToken => {
+  public static create = (token?: Partial<UserToken>): UserToken => {
     return new OrgUserToken(token);
   };
 }

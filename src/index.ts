@@ -4,4 +4,4 @@ export * from './domain/adapters';
 
 export * from './hooks/useAccessTokenSilently';
 
-export * from './providers/AuthProvider';
+export * from './context/AuthSilently';

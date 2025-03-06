@@ -10,7 +10,7 @@ import {
 } from '@remix-run/react';
 import * as React from 'react';
 
-import { AuthAccessSilentlyProvider } from '../src';
+import { AuthSilentlyProvider } from '../src';
 // @see https://remix.run/docs/en/main/styling/tailwind
 import styles from './tailwind.css?url';
 
@@ -52,7 +52,7 @@ export function Layout({
         suppressHydrationWarning
       >
         <main className='bg-white'>
-          <AuthAccessSilentlyProvider
+          <AuthSilentlyProvider
             domain={domain}
             clientId={clientId}
             authorizationParams={{ redirectUri }}
@@ -66,7 +66,7 @@ export function Layout({
               }
               return null;
             }}
-          </AuthAccessSilentlyProvider>
+          </AuthSilentlyProvider>
           <Scripts />
           <ScrollRestoration />
         </main>

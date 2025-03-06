@@ -7,7 +7,6 @@ import type {
   AuthOktaUser,
   UseAccessTokenSilentlyState,
   UserAccessTokenSilentlyOptions,
-  UserToken,
 } from '../domain/types';
 
 export const useAccessTokenSilently = (
@@ -25,7 +24,9 @@ export const useAccessTokenSilently = (
     user,
   } = useAuth0<AuthOktaUser>();
 
-  const [userToken, setUserToken] = useState<UserToken>(toUserToken());
+  const [authOktaToken, setAuthOktaToken] = useState<
+    AuthOktaToken | undefined
+  >();
 
   const handleGetAccessTokenSilently = useCallback(async () => {
     try {
@@ -34,18 +35,17 @@ export const useAccessTokenSilently = (
         detailedResponse: true,
       });
 
-      const userToken = toUserToken(payload);
-      setUserToken(userToken);
+      setAuthOktaToken(payload);
     } catch (e) {
       loginWithRedirect(options).then();
     }
-  }, [getAccessTokenSilently, loginWithRedirect, options, toUserToken]);
+  }, [getAccessTokenSilently, loginWithRedirect, options]);
 
   useEffect(() => {
-    if (!isAuthenticated && !isLoading) {
+    if (authOktaToken === undefined && !isLoading) {
       handleGetAccessTokenSilently().then();
     }
-  }, [handleGetAccessTokenSilently, isAuthenticated, isLoading]);
+  }, [handleGetAccessTokenSilently, isLoading, authOktaToken]);
 
   return {
     error,
@@ -53,8 +53,8 @@ export const useAccessTokenSilently = (
     isLoading,
     loginWithRedirect,
     logout,
-    userToken,
     handleGetAccessTokenSilently,
+    userToken: toUserToken(authOktaToken),
     user: toUser(user),
   };
 };
