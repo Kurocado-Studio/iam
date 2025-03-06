@@ -4,9 +4,9 @@ import { type Options, defineConfig } from 'tsup';
 const tsupOptions: Options = {
   clean: true,
   dts: true,
-  entry: ['src/index.ts', 'src/remix/setup.npm.ts'],
+  entry: ['src/index.ts'],
   external: ['react'],
-  format: ['esm', 'cjs'],
+  format: ['esm'],
   sourcemap: true,
   splitting: true,
   target: 'node20',

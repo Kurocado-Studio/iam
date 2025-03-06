@@ -1,10 +1,11 @@
 {
   "$schema": "https://json.schemastore.org/tsconfig",
   "extends": [
-    "@kurocado-studio/qa/npm/tsconfig.qa",
+    "@kurocado-studio/qa/remix/tsconfig.qa",
     "@kurocado-studio/styleguide/remix/tsconfig"
   ],
   "compilerOptions": {
+    "types": ["vitest/globals"],
     "skipLibCheck": true,
     "rootDir": ".",
     "baseUrl": ".",
@@ -13,7 +14,9 @@
   "include": [
     "src/**/*.ts",
     "src/**/*.tsx",
-    "setup.npm.ts",
+    "app/**/*.ts",
+    "app/**/*.tsx",
+    "setup.remix.ts",
     "tailwind.config.ts",
     "test/**/*.test.ts",
     "test/**/*.test.tsx",

@@ -1,3 +1,4 @@
+/* eslint import/no-default-export: 0 */
 /**
  * Made with ❤️ and adobo by Kurocado Studio
  * Copyright (c) 2024. All Rights Reserved.
@@ -6,9 +7,12 @@
  *
  * Explore our open-source projects: {@link https://github.com/kurocado-studio}
  */
-import {
-  defineESLintConfig,
-  eslintReactConfig,
-} from '@kurocado-studio/styleguide';
+import { type Config } from 'tailwindcss';
 
-export default defineESLintConfig(eslintReactConfig);
+export default {
+  content: ['./app/**/*.{mdx,ts,tsx}'],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+} satisfies Config;
