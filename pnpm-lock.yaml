@@ -47,7 +47,7 @@ importers:
         version: 19.7.1(@types/node@22.13.10)(typescript@5.8.2)
       '@commitlint/config-conventional':
         specifier: ^19.7.1
-        version: 19.7.1
+        version: 19.8.0
       '@faker-js/faker':
         specifier: ^9.5.1
         version: 9.5.1
@@ -56,7 +56,7 @@ importers:
         version: 1.0.0(@swc/core@1.11.7)(@testing-library/dom@10.4.0)(@types/debug@4.1.12)(@types/react@18.3.18)(eslint@8.57.1)(jiti@2.4.2)(optionator@0.9.4)(prettier@3.5.3)(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(rollup@4.34.9)(terser@5.39.0)(vite@6.2.0(@types/node@22.13.10)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.0))(vitest-axe@0.1.0(vitest@3.0.7(@types/debug@4.1.12)(@types/node@22.13.10)(jiti@2.4.2)(jsdom@25.0.1)(terser@5.39.0)(yaml@2.7.0)))(yaml@2.7.0)
       '@kurocado-studio/styleguide':
         specifier: 2.2.8
-        version: 2.2.8(@babel/core@7.26.9)(@commitlint/cli@19.7.1(@types/node@22.13.10)(typescript@5.8.2))(@commitlint/config-conventional@19.7.1)(@remix-run/react@2.16.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.8.2))(@remix-run/serve@2.16.0(typescript@5.8.2))(@types/eslint@9.6.1)(babel-plugin-macros@3.1.0)(eslint-plugin-jest@25.7.0(@typescript-eslint/eslint-plugin@5.62.0(@typescript-eslint/parser@8.26.0(eslint@8.57.1)(typescript@5.8.2))(eslint@8.57.1)(typescript@5.8.2))(eslint@8.57.1)(typescript@5.8.2))(eslint@8.57.1)(husky@9.1.7)(jiti@2.4.2)(prettier@3.5.3)(rollup@4.34.9)(semantic-release@23.1.1(typescript@5.8.2))(terser@5.39.0)(typescript@5.8.2)(vite@6.2.0(@types/node@22.13.10)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.0))(vitest@3.0.7(@types/debug@4.1.12)(@types/node@22.13.10)(jiti@2.4.2)(jsdom@25.0.1)(terser@5.39.0)(yaml@2.7.0))(yaml@2.7.0)
+        version: 2.2.8(@babel/core@7.26.9)(@commitlint/cli@19.7.1(@types/node@22.13.10)(typescript@5.8.2))(@commitlint/config-conventional@19.8.0)(@remix-run/react@2.16.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.8.2))(@remix-run/serve@2.16.0(typescript@5.8.2))(@types/eslint@9.6.1)(babel-plugin-macros@3.1.0)(eslint-plugin-jest@25.7.0(@typescript-eslint/eslint-plugin@5.62.0(@typescript-eslint/parser@8.26.0(eslint@8.57.1)(typescript@5.8.2))(eslint@8.57.1)(typescript@5.8.2))(eslint@8.57.1)(typescript@5.8.2))(eslint@8.57.1)(husky@9.1.7)(jiti@2.4.2)(prettier@3.5.3)(rollup@4.34.9)(semantic-release@23.1.1(typescript@5.8.2))(terser@5.39.0)(typescript@5.8.2)(vite@6.2.0(@types/node@22.13.10)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.0))(vitest@3.0.7(@types/debug@4.1.12)(@types/node@22.13.10)(jiti@2.4.2)(jsdom@25.0.1)(terser@5.39.0)(yaml@2.7.0))(yaml@2.7.0)
       '@remix-run/dev':
         specifier: ^2.16.0
         version: 2.16.0(@remix-run/react@2.16.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.8.2))(@remix-run/serve@2.16.0(typescript@5.8.2))(@types/node@22.13.10)(babel-plugin-macros@3.1.0)(jiti@2.4.2)(terser@5.39.0)(typescript@5.8.2)(vite@6.2.0(@types/node@22.13.10)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.0))(yaml@2.7.0)
@@ -316,8 +316,8 @@ packages:
     engines: {node: '>=v18'}
     hasBin: true
 
-  '@commitlint/config-conventional@19.7.1':
-    resolution: {integrity: sha512-fsEIF8zgiI/FIWSnykdQNj/0JE4av08MudLTyYHm4FlLWemKoQvPNUYU2M/3tktWcCEyq7aOkDDgtjrmgWFbvg==}
+  '@commitlint/config-conventional@19.8.0':
+    resolution: {integrity: sha512-9I2kKJwcAPwMoAj38hwqFXG0CzS2Kj+SAByPUQ0SlHTfb7VUhYVmo7G2w2tBrqmOf7PFd6MpZ/a1GQJo8na8kw==}
     engines: {node: '>=v18'}
 
   '@commitlint/config-validator@19.5.0':
@@ -378,6 +378,10 @@ packages:
 
   '@commitlint/types@19.5.0':
     resolution: {integrity: sha512-DSHae2obMSMkAtTBSOulg5X7/z+rGLxcXQIkg3OmWvY6wifojge5uVMydfhUvs7yQj+V7jNmRZ2Xzl8GJyqRgg==}
+    engines: {node: '>=v18'}
+
+  '@commitlint/types@19.8.0':
+    resolution: {integrity: sha512-LRjP623jPyf3Poyfb0ohMj8I3ORyBDOwXAgxxVPbSD0unJuW2mJWeiRfaQinjtccMqC5Wy1HOMfa4btKjbNxbg==}
     engines: {node: '>=v18'}
 
   '@csstools/color-helpers@5.0.2':
@@ -6878,9 +6882,9 @@ snapshots:
       - '@types/node'
       - typescript
 
-  '@commitlint/config-conventional@19.7.1':
+  '@commitlint/config-conventional@19.8.0':
     dependencies:
-      '@commitlint/types': 19.5.0
+      '@commitlint/types': 19.8.0
       conventional-changelog-conventionalcommits: 7.0.2
 
   '@commitlint/config-validator@19.5.0':
@@ -6971,6 +6975,11 @@ snapshots:
       find-up: 7.0.0
 
   '@commitlint/types@19.5.0':
+    dependencies:
+      '@types/conventional-commits-parser': 5.0.1
+      chalk: 5.4.1
+
+  '@commitlint/types@19.8.0':
     dependencies:
       '@types/conventional-commits-parser': 5.0.1
       chalk: 5.4.1
@@ -7374,11 +7383,11 @@ snapshots:
       - vue-tsc
       - yaml
 
-  '@kurocado-studio/styleguide@2.2.8(@babel/core@7.26.9)(@commitlint/cli@19.7.1(@types/node@22.13.10)(typescript@5.8.2))(@commitlint/config-conventional@19.7.1)(@remix-run/react@2.16.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.8.2))(@remix-run/serve@2.16.0(typescript@5.8.2))(@types/eslint@9.6.1)(babel-plugin-macros@3.1.0)(eslint-plugin-jest@25.7.0(@typescript-eslint/eslint-plugin@5.62.0(@typescript-eslint/parser@8.26.0(eslint@8.57.1)(typescript@5.8.2))(eslint@8.57.1)(typescript@5.8.2))(eslint@8.57.1)(typescript@5.8.2))(eslint@8.57.1)(husky@9.1.7)(jiti@2.4.2)(prettier@3.5.3)(rollup@4.34.9)(semantic-release@23.1.1(typescript@5.8.2))(terser@5.39.0)(typescript@5.8.2)(vite@6.2.0(@types/node@22.13.10)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.0))(vitest@3.0.7(@types/debug@4.1.12)(@types/node@22.13.10)(jiti@2.4.2)(jsdom@25.0.1)(terser@5.39.0)(yaml@2.7.0))(yaml@2.7.0)':
+  '@kurocado-studio/styleguide@2.2.8(@babel/core@7.26.9)(@commitlint/cli@19.7.1(@types/node@22.13.10)(typescript@5.8.2))(@commitlint/config-conventional@19.8.0)(@remix-run/react@2.16.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.8.2))(@remix-run/serve@2.16.0(typescript@5.8.2))(@types/eslint@9.6.1)(babel-plugin-macros@3.1.0)(eslint-plugin-jest@25.7.0(@typescript-eslint/eslint-plugin@5.62.0(@typescript-eslint/parser@8.26.0(eslint@8.57.1)(typescript@5.8.2))(eslint@8.57.1)(typescript@5.8.2))(eslint@8.57.1)(typescript@5.8.2))(eslint@8.57.1)(husky@9.1.7)(jiti@2.4.2)(prettier@3.5.3)(rollup@4.34.9)(semantic-release@23.1.1(typescript@5.8.2))(terser@5.39.0)(typescript@5.8.2)(vite@6.2.0(@types/node@22.13.10)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.0))(vitest@3.0.7(@types/debug@4.1.12)(@types/node@22.13.10)(jiti@2.4.2)(jsdom@25.0.1)(terser@5.39.0)(yaml@2.7.0))(yaml@2.7.0)':
     dependencies:
       '@babel/eslint-parser': 7.26.8(@babel/core@7.26.9)(eslint@8.57.1)
       '@commitlint/cli': 19.7.1(@types/node@22.13.10)(typescript@5.8.2)
-      '@commitlint/config-conventional': 19.7.1
+      '@commitlint/config-conventional': 19.8.0
       '@eslint/js': 9.21.0
       '@remix-run/dev': 2.16.0(@remix-run/react@2.16.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)(typescript@5.8.2))(@remix-run/serve@2.16.0(typescript@5.8.2))(@types/node@20.5.0)(babel-plugin-macros@3.1.0)(jiti@2.4.2)(terser@5.39.0)(typescript@5.8.2)(vite@6.2.0(@types/node@22.13.10)(jiti@2.4.2)(terser@5.39.0)(yaml@2.7.0))(yaml@2.7.0)
       '@rushstack/eslint-patch': 1.10.5
