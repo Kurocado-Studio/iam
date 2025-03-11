@@ -43,8 +43,6 @@ pnpm run demo-iam-app
 
 ```typescript jsx
 import { AuthSilentlyProvider, useAuthSilentlyContext } from '@kurocado-studio/iam';
-import { YourComponent } from './src'
-
 import React from 'react';
 
 const YourComponent = () => {
