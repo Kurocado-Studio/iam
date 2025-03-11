@@ -53,7 +53,7 @@ const YourComponent = () => {
 const Example: React.FC = () => {
   const domain = import.meta.env.VITE_AUTH_DOMAIN;
   const clientId = import.meta.env.VITE_AUTH_CLIENT_ID;
-  const redirectUri = window.location.origin
+  const redirectUri = import.meta.env.VITE_AUTH_REDIRECT_URI
 
   return <AuthSilentlyProvider
     domain={domain}
