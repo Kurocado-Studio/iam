@@ -14,7 +14,7 @@
     "lint:fix": "turbo run lint:fix --",
     "prepare": "husky install",
     "prettier:check": "turbo run prettier:check",
-    "prettier:fix": "prettier --write . &&  turbo run prettier:fix",
+    "prettier:fix": "prettier --write . && turbo run prettier:fix",
     "preview-storybook": "turbo run preview-storybook",
     "semantic-release": "pnpm run semantic-release-monorepo",
     "semantic-release-monorepo": "pnpm -r exec -- npx --no-install semantic-release -e semantic-release-monorepo",

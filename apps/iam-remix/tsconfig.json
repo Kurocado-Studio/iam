@@ -10,10 +10,6 @@
     "baseUrl": ".",
     "jsx": "preserve"
   },
-  "include": [
-    "**/*.ts",
-    "app",
-    "test"
-  ],
+  "include": ["**/*.ts", "app", "test"],
   "exclude": ["node_modules", "dist"]
 }

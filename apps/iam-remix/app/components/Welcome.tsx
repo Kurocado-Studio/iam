@@ -1,10 +1,8 @@
 import { useAuthSilentlyContext } from '@kurocado-studio/auth-zero';
 import * as React from 'react';
 
-
 export function Welcome(): React.ReactNode {
   const { handleLogout } = useAuthSilentlyContext();
-
 
   return (
     <main className='bg-white'>

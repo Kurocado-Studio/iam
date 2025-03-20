@@ -57,9 +57,9 @@ export function Layout({
             clientId={clientId}
             authorizationParams={{ redirectUri }}
           >
-            {({ isLoading, isAuthenticated })=> {
+            {({ isLoading, isAuthenticated }) => {
               if (isAuthenticated && !isLoading) {
-                return  <>{children}</>;
+                return <>{children}</>;
               }
               if (isLoading) {
                 return <p>Loading...</p>;
