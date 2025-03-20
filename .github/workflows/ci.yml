@@ -3,6 +3,7 @@ name: CI/CD Pipeline
 permissions:
   contents: write
   pages: write
+  id-token: write
   pull-requests: write
 
 on:
