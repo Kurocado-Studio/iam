@@ -1,1 +1,1 @@
-import '@kurocado-studio/qa/dist/remix/setup.remix';
+import '@kurocado-studio/qa/remix/setup';
