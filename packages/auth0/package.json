@@ -1,5 +1,5 @@
 {
-  "name": "@kurocado-studio/iam",
+  "name": "@kurocado-studio/auth-zero",
   "version": "0.0.0-semantically-released",
   "description": "",
   "homepage": "https://github.com/kurocado-studio/iam",
@@ -18,14 +18,14 @@
   "scripts": {
     "build": "rm -rf dist && tsup --dts && copyfiles -u 1 src/tsconfig/*.json dist",
     "clean": "rm -rf .turbo node_modules dist",
-    "dev": "node_modules/.bin/tsup --watch",
-    "lint": "node_modules/.bin/eslint --max-warnings=0 . --no-warn-ignored",
-    "lint:fix": "node_modules/.bin/eslint --max-warnings=0 . --fix --no-warn-ignored",
-    "prettier:check": "node_modules/.bin/prettier --check .",
-    "prettier:fix": "node_modules/.bin/prettier --check . --write",
+    "dev": "tsup --watch",
+    "lint": "eslint --max-warnings=0 . --no-warn-ignored",
+    "lint:fix": "eslint --max-warnings=0 . --fix --no-warn-ignored",
+    "prettier:check": "prettier --check .",
+    "prettier:fix": "prettier --check . --write",
     "setup": "pnpm install",
     "typecheck": "tsc",
-    "test": "node_modules/.bin/vitest run --coverage"
+    "test": "vitest run --coverage"
   },
   "files": ["dist"],
   "dependencies": {
