@@ -6,8 +6,7 @@ simplifies integrating Auth0 authentication in React applications by reducing bo
 enforcing best practices.
 
 ### Project Status
-
-[Identity and Access Management](https://kurocado.youtrack.cloud/articles/PLA-A-15/Identity-and-Access-Management)
+[Identity and Access Management](https://kurocado-studio.github.io/iam)
 is in the early stages of development. We're sharing it publicly to gather feedback, collaborate
 with the community, and improve it over time.
 
@@ -16,7 +15,7 @@ Feel free to open issues or contribute to discussions — your input is valuable
 ## Installation
 
 ```bash
-pnpm install @kurocado-studio/iam
+pnpm install @kurocado-studio/auth-zero
 ```
 
 ### Setup
@@ -42,7 +41,7 @@ pnpm run demo-iam-app
 ### Usage
 
 ```typescript jsx
-import { AuthSilentlyProvider, useAuthSilentlyContext } from '@kurocado-studio/iam';
+import { AuthSilentlyProvider, useAuthSilentlyContext } from '@kurocado-studio/auth-zero';
 import React from 'react';
 
 const YourComponent = () => {

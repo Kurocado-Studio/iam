@@ -30,6 +30,8 @@ jobs:
   document:
     needs: test
     uses: kurocado-studio/dev-ops/.github/workflows/workflow.document.yml@main
+    with:
+      instance_id: iam
     secrets:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
