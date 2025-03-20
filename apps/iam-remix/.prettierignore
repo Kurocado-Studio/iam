@@ -1,0 +1,4 @@
+pnpm-lock.yaml
+.turbo
+build
+node_modules

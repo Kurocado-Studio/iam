@@ -81,7 +81,7 @@ function AuthSilently({
 export function AuthSilentlyProvider({
   children,
   ...restAuthProviderOpts
-}: AuthProviderProps): React.ReactNode {
+}: AuthProviderProps): React.JSX.Element {
   return (
     <Auth0Provider {...restAuthProviderOpts}>
       <AuthSilently {...restAuthProviderOpts}>{children}</AuthSilently>
