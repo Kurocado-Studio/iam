@@ -11,4 +11,9 @@ dist
 node_modules
 packages
 workspace
+**/*.png
+**/*.xml
+**/*.tree
+**/*.list
+**/*.cfg
 
