@@ -16,7 +16,7 @@ Feel free to open issues or contribute to discussions — your input is valuable
 ## Installation
 
 ```bash
-pnpm install @kurocado-studio/iam
+pnpm install @kurocado-studio/auth-zero
 ```
 
 ### Setup
@@ -42,7 +42,7 @@ pnpm run demo-iam-app
 ### Usage
 
 ```typescript jsx
-import { AuthSilentlyProvider, useAuthSilentlyContext } from '@kurocado-studio/iam';
+import { AuthSilentlyProvider, useAuthSilentlyContext } from '@kurocado-studio/auth-zero';
 import React from 'react';
 
 const YourComponent = () => {
