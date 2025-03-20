@@ -18,7 +18,7 @@
     "preview-storybook": "turbo run preview-storybook",
     "semantic-release": "pnpm run semantic-release-monorepo",
     "semantic-release-monorepo": "pnpm -r exec -- npx --no-install semantic-release -e semantic-release-monorepo",
-    "setup": "pnpm clean && pnpm i && turbo run setup",
+    "setup": "pnpm i && turbo run setup",
     "test": "turbo run test",
     "version-packages": "changeset version"
   },
