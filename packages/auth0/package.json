@@ -2,13 +2,13 @@
   "name": "@kurocado-studio/iam",
   "version": "0.0.0-semantically-released",
   "description": "",
-  "homepage": "https://github.com/kurocado-studio/platform",
+  "homepage": "https://github.com/kurocado-studio/iam",
   "bugs": {
-    "url": "https://github.com/kurocado-studio/platform/issues"
+    "url": "https://github.com/kurocado-studio/iam/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kurocado-studio/platform.git"
+    "url": "git+https://github.com/kurocado-studio/iam.git"
   },
   "license": "MIT",
   "type": "module",
