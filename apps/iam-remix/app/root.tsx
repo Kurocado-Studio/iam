@@ -57,7 +57,7 @@ export function Layout({
             clientId={clientId}
             authorizationParams={{ redirectUri }}
           >
-            {({ isLoading, isAuthenticated }): JSX.Element | null => {
+            {({ isLoading, isAuthenticated })=> {
               if (isAuthenticated && !isLoading) {
                 return  <>{children}</>;
               }

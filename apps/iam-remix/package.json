@@ -4,13 +4,14 @@
   "version": "0.0.0-semantically-released",
   "type": "module",
   "scripts": {
-    "build": "rm -rf dist && tsup --dts",
+    "build": "rm -rf dist && remix vite:build",
     "clean": "rm -rf .turbo node_modules",
     "dev": "remix vite:dev",
     "lint": "eslint --max-warnings=0 . --no-warn-ignored",
     "lint:fix": "eslint --max-warnings=0 . --fix --no-warn-ignored",
     "prettier:check": "prettier --check .",
     "prettier:fix": "prettier --check . --write",
+    "start": "remix-serve ./build/server/index.js",
     "setup": "pnpm install",
     "typecheck": "tsc"
   },
