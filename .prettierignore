@@ -4,6 +4,7 @@
 .npmrc
 .prettierignore
 .turbo
+pnpm-lock.yaml
 apps
 coverage
 dist
