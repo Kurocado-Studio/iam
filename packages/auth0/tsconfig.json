@@ -21,6 +21,5 @@
     "vitest.config.ts",
     "src/globals.d.ts"
   ],
-  "exclude": [
-    "node_modules", "dist", "build"]
+  "exclude": ["node_modules", "dist", "build"]
 }
