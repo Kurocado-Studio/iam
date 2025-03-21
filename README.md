@@ -61,10 +61,3 @@ const Example: React.FC = () => {
   </AuthSilentlyProvider>
 }
 ```
-
-## Contributing
-
-Contributions are always welcome! See
-[contributing](https://kurocado.youtrack.cloud/articles/PLA-A-9/Contributing) for ways to get
-started & please adhere to our
-[code of conduct.](https://kurocado.youtrack.cloud/articles/PLA-A-10/Code-of-Conduct)
