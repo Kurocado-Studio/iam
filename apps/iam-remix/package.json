@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0-semantically-released",
   "type": "module",
+  "packageManager": "pnpm@9.12.2",
   "scripts": {
     "build": "rm -rf dist && remix vite:build",
     "clean": "rm -rf .turbo node_modules",
