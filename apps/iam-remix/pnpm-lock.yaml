@@ -1,0 +1,7 @@
+# When the CLI starts running "vercel build"
+# it runs with : Running "install" command: `pnpm install --frozen-lockfile`...
+# It throws:
+#  ERROR Headless installation requires a pnpm-lock.yaml file
+#  Error: Command "pnpm install --frozen-lockfile" exited with 1
+#  -------
+#  This forces Vercel to use PNPM
