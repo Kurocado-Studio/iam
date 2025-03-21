@@ -1,10 +1,5 @@
 # Kurocado Studio Identity & Access Management
 
-The Auth0 React SDK is a lightweight library that enhances auth0-react by providing custom hooks for
-authentication, Role-Based Access Control (RBAC), session management, and permissions handling. It
-simplifies integrating Auth0 authentication in React applications by reducing boilerplate code and
-enforcing best practices.
-
 ### Project Status
 
 [Identity and Access Management](https://kurocado-studio.github.io/iam) is in the early stages of
