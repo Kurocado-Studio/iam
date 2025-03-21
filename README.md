@@ -62,11 +62,6 @@ const Example: React.FC = () => {
 }
 ```
 
-## Documentation
-
-- [Guides](https://kurocado.youtrack.cloud/articles/STY-A-4/Guides)
-- [Project Charter](https://kurocado.youtrack.cloud/articles/STY-A-1/Project-Charter)
-
 ## Contributing
 
 Contributions are always welcome! See
