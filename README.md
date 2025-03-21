@@ -1,4 +1,4 @@
-# Kurocado Studio IAM
+# Kurocado Studio IAM Monorepo
 
 The Auth0 React SDK is a lightweight library that enhances auth0-react by providing custom hooks for
 authentication, Role-Based Access Control (RBAC), session management, and permissions handling. It
