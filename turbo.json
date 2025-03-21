@@ -3,8 +3,15 @@
   "tasks": {
     "build": {
       "inputs": ["$TURBO_DEFAULT$", ".env*"],
-      "outputs": ["dist/**", "storybook-static/**"],
-      "dependsOn": ["^build"]
+      "dependsOn": ["^build"],
+      "outputs": [".next/**", "dist/**", "storybook-static/**"],
+      "env": [
+        "VITE_AUTH_DOMAIN",
+        "VITE_AUTH_CLIENT_ID",
+        "VITE_AUTH_AUDIENCE",
+        "VITE_AUTH_REDIRECT_URI",
+        "VITE_AUTH_SCOPE"
+      ]
     },
     "setup": {
       "cache": false

@@ -1,15 +1,8 @@
-# Kurocado Studio IAM SDK
+# Kurocado Studio Identity & Access Management
 
-The Auth0 React SDK is a lightweight library that enhances auth0-react by providing custom hooks for
-authentication, Role-Based Access Control (RBAC), session management, and permissions handling. It
-simplifies integrating Auth0 authentication in React applications by reducing boilerplate code and
-enforcing best practices.
-
-### Project Status
-
-[Identity and Access Management](https://kurocado.youtrack.cloud/articles/PLA-A-15/Identity-and-Access-Management)
-is in the early stages of development. We're sharing it publicly to gather feedback, collaborate
-with the community, and improve it over time.
+[Identity and Access Management](https://kurocado-studio.github.io/iam) is in the early stages of
+development. We're sharing it publicly to gather feedback, collaborate with the community, and
+improve it over time.
 
 Feel free to open issues or contribute to discussions — your input is valuable!
 
@@ -29,14 +22,6 @@ VITE_AUTH_CLIENT_ID=**
 VITE_AUTH_AUDIENCE=**
 VITE_AUTH_SCOPE=**
 VITE_AUTH_REDIRECT_URI=**
-```
-
-### Demo
-
-There is an `app` directory containing a demo application
-
-```bash
-pnpm run demo-iam-app
 ```
 
 ### Usage
@@ -69,15 +54,3 @@ const Example: React.FC = () => {
   </AuthSilentlyProvider>
 }
 ```
-
-## Documentation
-
-- [Guides](https://kurocado.youtrack.cloud/articles/STY-A-4/Guides)
-- [Project Charter](https://kurocado.youtrack.cloud/articles/STY-A-1/Project-Charter)
-
-## Contributing
-
-Contributions are always welcome! See
-[contributing](https://kurocado.youtrack.cloud/articles/PLA-A-9/Contributing) for ways to get
-started & please adhere to our
-[code of conduct.](https://kurocado.youtrack.cloud/articles/PLA-A-10/Code-of-Conduct)
