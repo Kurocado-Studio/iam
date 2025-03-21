@@ -1,1 +1,1 @@
-IAM Remix app demo
+IAM Remix app
