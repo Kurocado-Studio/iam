@@ -1,3 +1,5 @@
+# @kurocado-studio/auth-zero
+
 ## Installation
 
 ```bash
