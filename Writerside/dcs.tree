@@ -7,4 +7,5 @@
                  start-page="starter-topic.md">
 
     <toc-element topic="starter-topic.md"/>
+    <toc-element topic="Auth0-by-Okta.md"/>
 </instance-profile>

@@ -1,13 +1,8 @@
 # Overview
 
-|            |                                              |
-| ---------- | -------------------------------------------- |
-| Repository | <https://github.com/Kurocado-Studio/iam>     |
-| Platform   | <https://kurocado-studio.github.io/platform> |
-
-#### Auth0 by Okta
-
-|            |                                                                   |
-| ---------- | ----------------------------------------------------------------- |
-| NPM        | <https://www.npmjs.com/package/@kurocado-studio/auth-zero>        |
-| Repository | <https://github.com/Kurocado-Studio/iam/tree/main/packages/auth0> |
+|               |                                                                                                                                                                                                                                                                                                                                                 |
+| ------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Repository    | <https://github.com/Kurocado-Studio/iam>                                                                                                                                                                                                                                                                                                        |
+| Platform      | <https://kurocado-studio.github.io/platform>                                                                                                                                                                                                                                                                                                    |
+| Auth0 by Okta | [](Auth0-by-Okta.md)                                                                                                                                                                                                                                                                                                                            |
+| Main          | <a href="https://github.com/Kurocado-Studio/iam/actions/workflows/ci.yml" data-test="external-link" target="_blank"  rel="noopener noreferrer nofollow"  class="link-nude" id="-koieto_147"><img src="https://github.com/Kurocado-Studio/iam/actions/workflows/ci.yml/badge.svg?branch=main" alt="CI/CD Pipeline" title="CI/CD Pipeline" /></a> |
