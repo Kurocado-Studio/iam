@@ -32,7 +32,7 @@
   "devDependencies": {
     "@kurocado-studio/qa": "2.0.0-alpha.2",
     "@kurocado-studio/styleguide": "^2.3.3",
-    "@remix-run/dev": "^2.16.0",
+    "@remix-run/dev": "^2.16.3",
     "@remix-run/serve": "^2.16.0",
     "@vitest/coverage-v8": "^3.0.8",
     "autoprefixer": "^10.4.20",
