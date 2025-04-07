@@ -1,9 +1,9 @@
-name: CI/CD Pipeline
+name: CI/CD Main Pipeline
 
 permissions:
   contents: write
-  pages: write
   id-token: write
+  pages: write
   pull-requests: write
 
 on:
@@ -30,10 +30,10 @@ jobs:
   document:
     needs: test
     uses: kurocado-studio/dev-ops/.github/workflows/workflow.document.yml@main
-    with:
-      instance_id: dcs
     secrets:
       GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    with:
+      instance_id: dcs
 
   release:
     needs: test
