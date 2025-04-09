@@ -19,7 +19,7 @@
   "dependencies": {
     "@kurocado-studio/auth-zero": "workspace:*",
     "@remix-run/node": "^2.16.0",
-    "@remix-run/react": "^2.16.4",
+    "@remix-run/react": "^2.16.5",
     "autoprefixer": "^10.4.21",
     "isbot": "^5.1.23",
     "lodash-es": "^4.17.21",
