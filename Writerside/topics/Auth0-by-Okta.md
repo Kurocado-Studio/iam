@@ -1,6 +1,6 @@
-# Auth0 by Okta
+# Auth0 by Okta module
 
 |            |                                                                   |
 | ---------- | ----------------------------------------------------------------- |
-| NPM        | <https://www.npmjs.com/package/@kurocado-studio/auth-zero>        |
 | Repository | <https://github.com/Kurocado-Studio/iam/tree/main/packages/auth0> |
+| NPM        | <https://www.npmjs.com/package/@kurocado-studio/auth-zero>        |
