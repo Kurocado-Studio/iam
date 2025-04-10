@@ -39,8 +39,8 @@ importers:
         specifier: workspace:*
         version: link:../../packages/auth0
       '@remix-run/node':
-        specifier: ^2.16.0
-        version: 2.16.2(typescript@5.8.3)
+        specifier: ^2.16.5
+        version: 2.16.5(typescript@5.8.3)
       '@remix-run/react':
         specifier: ^2.16.5
         version: 2.16.5(react-dom@19.1.0(react@19.0.0))(react@19.0.0)(typescript@5.8.3)
@@ -8272,7 +8272,7 @@ snapshots:
     dependencies:
       '@eslint/js': 9.22.0
       '@faker-js/faker': 9.6.0
-      '@remix-run/node': 2.16.2(typescript@5.8.3)
+      '@remix-run/node': 2.16.5(typescript@5.8.3)
       '@remix-run/testing': 2.16.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.8.3)
       '@testing-library/jest-dom': 6.6.3
       '@testing-library/react': 16.2.0(@testing-library/dom@10.4.0)(@types/react-dom@19.0.0)(@types/react@19.0.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
@@ -8348,7 +8348,7 @@ snapshots:
     dependencies:
       '@eslint/js': 9.22.0
       '@faker-js/faker': 9.6.0
-      '@remix-run/node': 2.16.2(typescript@5.8.3)
+      '@remix-run/node': 2.16.5(typescript@5.8.3)
       '@remix-run/testing': 2.16.2(react-dom@19.0.0(react@19.0.0))(react@19.0.0)(typescript@5.8.3)
       '@testing-library/jest-dom': 6.6.3
       '@testing-library/react': 16.2.0(@testing-library/dom@10.4.0)(@types/react-dom@19.0.0)(@types/react@19.0.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0)
