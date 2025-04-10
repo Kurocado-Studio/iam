@@ -13,7 +13,7 @@ importers:
         version: 2.28.1
       '@kurocado-studio/styleguide':
         specifier: ^2.3.3
-        version: 2.3.3(@babel/core@7.26.10)(@commitlint/cli@19.8.0(@types/node@22.14.0)(typescript@5.8.3))(@commitlint/config-conventional@19.8.0)(@remix-run/react@2.16.5(react-dom@19.1.0(react@19.0.0))(react@19.0.0)(typescript@5.8.3))(@remix-run/serve@2.16.4(typescript@5.8.3))(eslint@9.24.0(jiti@2.4.2))(husky@9.1.7)(jiti@2.4.2)(prettier@3.5.3)(semantic-release@24.2.3(typescript@5.8.3))(typescript@5.8.3)(vite@6.2.5(@types/node@22.14.0)(jiti@2.4.2)(yaml@2.7.1))(vitest@3.1.1(@types/debug@4.1.12)(@types/node@22.14.0)(jiti@2.4.2)(jsdom@26.0.0)(yaml@2.7.1))(yaml@2.7.1)
+        version: 2.3.3(@babel/core@7.26.10)(@commitlint/cli@19.8.0(@types/node@22.14.0)(typescript@5.8.3))(@commitlint/config-conventional@19.8.0)(@remix-run/react@2.16.5(react-dom@19.1.0(react@19.0.0))(react@19.0.0)(typescript@5.8.3))(@remix-run/serve@2.16.5(typescript@5.8.3))(eslint@9.24.0(jiti@2.4.2))(husky@9.1.7)(jiti@2.4.2)(prettier@3.5.3)(semantic-release@24.2.3(typescript@5.8.3))(typescript@5.8.3)(vite@6.2.5(@types/node@22.14.0)(jiti@2.4.2)(yaml@2.7.1))(vitest@3.1.1(@types/debug@4.1.12)(@types/node@22.14.0)(jiti@2.4.2)(jsdom@26.0.0)(yaml@2.7.1))(yaml@2.7.1)
       commitlint:
         specifier: ^19.8.0
         version: 19.8.0(@types/node@22.14.0)(typescript@5.8.3)
@@ -74,13 +74,13 @@ importers:
         version: 2.0.0-alpha.2(@swc/core@1.11.13)(@testing-library/dom@10.4.0)(@types/debug@4.1.12)(@types/react@19.0.0)(eslint@9.24.0(jiti@2.4.2))(jiti@2.4.2)(optionator@0.9.4)(prettier@3.5.3)(react@19.0.0)(rollup@4.39.0)(vite@6.2.5(@types/node@22.13.10)(jiti@2.4.2)(yaml@2.7.1))(vitest-axe@0.1.0(vitest@3.1.1(@types/debug@4.1.12)(@types/node@22.13.10)(jiti@2.4.2)(jsdom@26.0.0)(yaml@2.7.1)))(yaml@2.7.1)
       '@kurocado-studio/styleguide':
         specifier: ^2.3.3
-        version: 2.3.3(@babel/core@7.26.10)(@commitlint/cli@19.8.0(@types/node@22.13.10)(typescript@5.8.3))(@commitlint/config-conventional@19.8.0)(@remix-run/react@2.16.5(react-dom@19.1.0(react@19.0.0))(react@19.0.0)(typescript@5.8.3))(@remix-run/serve@2.16.4(typescript@5.8.3))(eslint@9.24.0(jiti@2.4.2))(husky@9.1.7)(jiti@2.4.2)(prettier@3.5.3)(rollup@4.39.0)(semantic-release@24.2.3(typescript@5.8.3))(typescript@5.8.3)(vite@6.2.5(@types/node@22.13.10)(jiti@2.4.2)(yaml@2.7.1))(vitest@3.1.1(@types/debug@4.1.12)(@types/node@22.13.10)(jiti@2.4.2)(jsdom@26.0.0)(yaml@2.7.1))(yaml@2.7.1)
+        version: 2.3.3(@babel/core@7.26.10)(@commitlint/cli@19.8.0(@types/node@22.13.10)(typescript@5.8.3))(@commitlint/config-conventional@19.8.0)(@remix-run/react@2.16.5(react-dom@19.1.0(react@19.0.0))(react@19.0.0)(typescript@5.8.3))(@remix-run/serve@2.16.5(typescript@5.8.3))(eslint@9.24.0(jiti@2.4.2))(husky@9.1.7)(jiti@2.4.2)(prettier@3.5.3)(rollup@4.39.0)(semantic-release@24.2.3(typescript@5.8.3))(typescript@5.8.3)(vite@6.2.5(@types/node@22.13.10)(jiti@2.4.2)(yaml@2.7.1))(vitest@3.1.1(@types/debug@4.1.12)(@types/node@22.13.10)(jiti@2.4.2)(jsdom@26.0.0)(yaml@2.7.1))(yaml@2.7.1)
       '@remix-run/dev':
         specifier: ^2.16.4
-        version: 2.16.4(@remix-run/react@2.16.5(react-dom@19.1.0(react@19.0.0))(react@19.0.0)(typescript@5.8.3))(@remix-run/serve@2.16.4(typescript@5.8.3))(@types/node@22.13.10)(jiti@2.4.2)(typescript@5.8.3)(vite@6.2.5(@types/node@22.13.10)(jiti@2.4.2)(yaml@2.7.1))(yaml@2.7.1)
+        version: 2.16.4(@remix-run/react@2.16.5(react-dom@19.1.0(react@19.0.0))(react@19.0.0)(typescript@5.8.3))(@remix-run/serve@2.16.5(typescript@5.8.3))(@types/node@22.13.10)(jiti@2.4.2)(typescript@5.8.3)(vite@6.2.5(@types/node@22.13.10)(jiti@2.4.2)(yaml@2.7.1))(yaml@2.7.1)
       '@remix-run/serve':
-        specifier: ^2.16.4
-        version: 2.16.4(typescript@5.8.3)
+        specifier: ^2.16.5
+        version: 2.16.5(typescript@5.8.3)
       '@vitest/coverage-v8':
         specifier: ^3.1.1
         version: 3.1.1(vitest@3.1.1(@types/debug@4.1.12)(@types/node@22.13.10)(jiti@2.4.2)(jsdom@26.0.0)(yaml@2.7.1))
@@ -126,7 +126,7 @@ importers:
         version: 2.0.0-alpha.1(@swc/core@1.11.13)(@testing-library/dom@10.4.0)(@types/debug@4.1.12)(@types/react@19.0.0)(eslint@9.24.0(jiti@2.4.2))(jiti@2.4.2)(optionator@0.9.4)(prettier@3.5.3)(react@19.0.0)(rollup@4.39.0)(vite@6.2.5(@types/node@22.14.0)(jiti@2.4.2)(yaml@2.7.1))(vitest-axe@0.1.0(vitest@3.1.1(@types/debug@4.1.12)(@types/node@22.14.0)(jiti@2.4.2)(jsdom@26.0.0)(yaml@2.7.1)))(yaml@2.7.1)
       '@kurocado-studio/styleguide':
         specifier: 2.3.3
-        version: 2.3.3(@babel/core@7.26.10)(@commitlint/cli@19.8.0(@types/node@22.14.0)(typescript@5.8.3))(@commitlint/config-conventional@19.8.0)(@remix-run/react@2.16.5(react-dom@19.1.0(react@19.0.0))(react@19.0.0)(typescript@5.8.3))(@remix-run/serve@2.16.4(typescript@5.8.3))(eslint@9.24.0(jiti@2.4.2))(husky@9.1.7)(jiti@2.4.2)(prettier@3.5.3)(rollup@4.39.0)(semantic-release@23.1.1(typescript@5.8.3))(typescript@5.8.3)(vite@6.2.5(@types/node@22.14.0)(jiti@2.4.2)(yaml@2.7.1))(vitest@3.1.1(@types/debug@4.1.12)(@types/node@22.14.0)(jiti@2.4.2)(jsdom@26.0.0)(yaml@2.7.1))(yaml@2.7.1)
+        version: 2.3.3(@babel/core@7.26.10)(@commitlint/cli@19.8.0(@types/node@22.14.0)(typescript@5.8.3))(@commitlint/config-conventional@19.8.0)(@remix-run/react@2.16.5(react-dom@19.1.0(react@19.0.0))(react@19.0.0)(typescript@5.8.3))(@remix-run/serve@2.16.5(typescript@5.8.3))(eslint@9.24.0(jiti@2.4.2))(husky@9.1.7)(jiti@2.4.2)(prettier@3.5.3)(rollup@4.39.0)(semantic-release@23.1.1(typescript@5.8.3))(typescript@5.8.3)(vite@6.2.5(@types/node@22.14.0)(jiti@2.4.2)(yaml@2.7.1))(vitest@3.1.1(@types/debug@4.1.12)(@types/node@22.14.0)(jiti@2.4.2)(jsdom@26.0.0)(yaml@2.7.1))(yaml@2.7.1)
       '@testing-library/jest-dom':
         specifier: ^6.6.3
         version: 6.6.3
@@ -1491,8 +1491,8 @@ packages:
       wrangler:
         optional: true
 
-  '@remix-run/express@2.16.4':
-    resolution: {integrity: sha512-VQ78Jq1BctEDXRkkPsR1ixMDuwUzW89MaPa+dFJ5f7V2et+0LMXEKmriLFWdCqToN88QM0GjMhSi5UkUUWLIjQ==}
+  '@remix-run/express@2.16.5':
+    resolution: {integrity: sha512-FBaHxTaHYqGEjBN/WGMcXsicU7NakQ/+1463fYo8eTshNhxXDktqRkPuScbEJlwvAtZ051RancyoPx2a0O8nAQ==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       express: ^4.20.0
@@ -1512,6 +1512,15 @@ packages:
 
   '@remix-run/node@2.16.4':
     resolution: {integrity: sha512-scZwpc78cJS8dx6LMLemVHqnaAVbPWasx36TxYWUASA63hxPx5XbGbb6pe4cSpT8dWqhBtsPpHZoFTrM1aqx7A==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      typescript: ^5.1.0
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+
+  '@remix-run/node@2.16.5':
+    resolution: {integrity: sha512-awunS1kgFmc8q7sGz7FpGf66RXQm2Vw0yk5IFTIJa0WdQrskqyF/6CO+tEf/0np/OCu2fQ23+EfxY2qGHm1aOg==}
     engines: {node: '>=18.0.0'}
     peerDependencies:
       typescript: ^5.1.0
@@ -1545,8 +1554,8 @@ packages:
     resolution: {integrity: sha512-O3rHJzAQKamUz1fvE0Qaw0xSFqsA/yafi2iqeE0pvdFtCO1viYx8QL6f3Ln/aCCTLxs68SLf0KPM9eSeM8yBnA==}
     engines: {node: '>=14.0.0'}
 
-  '@remix-run/serve@2.16.4':
-    resolution: {integrity: sha512-9jYxxMI1RTKv7t1N53XzG3vQruWAaj6AYg4G5OoejtO7PZ6CbgbbHEiNa/f5ww3vhfcqZH7dfetDBdUYQ5PxVQ==}
+  '@remix-run/serve@2.16.5':
+    resolution: {integrity: sha512-hPrTY7ez/FVTxZamvODkjHlGEkbzurBB3krR+VwPLorQGz6+C2/eOJaQ3V1vVuBoeDWS5XgvwFQWtyi5CSezEA==}
     engines: {node: '>=18.0.0'}
     hasBin: true
 
@@ -8411,13 +8420,13 @@ snapshots:
       - vue-tsc
       - yaml
 
-  '@kurocado-studio/styleguide@2.3.3(@babel/core@7.26.10)(@commitlint/cli@19.8.0(@types/node@22.13.10)(typescript@5.8.3))(@commitlint/config-conventional@19.8.0)(@remix-run/react@2.16.5(react-dom@19.1.0(react@19.0.0))(react@19.0.0)(typescript@5.8.3))(@remix-run/serve@2.16.4(typescript@5.8.3))(eslint@9.24.0(jiti@2.4.2))(husky@9.1.7)(jiti@2.4.2)(prettier@3.5.3)(rollup@4.39.0)(semantic-release@24.2.3(typescript@5.8.3))(typescript@5.8.3)(vite@6.2.5(@types/node@22.13.10)(jiti@2.4.2)(yaml@2.7.1))(vitest@3.1.1(@types/debug@4.1.12)(@types/node@22.13.10)(jiti@2.4.2)(jsdom@26.0.0)(yaml@2.7.1))(yaml@2.7.1)':
+  '@kurocado-studio/styleguide@2.3.3(@babel/core@7.26.10)(@commitlint/cli@19.8.0(@types/node@22.13.10)(typescript@5.8.3))(@commitlint/config-conventional@19.8.0)(@remix-run/react@2.16.5(react-dom@19.1.0(react@19.0.0))(react@19.0.0)(typescript@5.8.3))(@remix-run/serve@2.16.5(typescript@5.8.3))(eslint@9.24.0(jiti@2.4.2))(husky@9.1.7)(jiti@2.4.2)(prettier@3.5.3)(rollup@4.39.0)(semantic-release@24.2.3(typescript@5.8.3))(typescript@5.8.3)(vite@6.2.5(@types/node@22.13.10)(jiti@2.4.2)(yaml@2.7.1))(vitest@3.1.1(@types/debug@4.1.12)(@types/node@22.13.10)(jiti@2.4.2)(jsdom@26.0.0)(yaml@2.7.1))(yaml@2.7.1)':
     dependencies:
       '@babel/eslint-parser': 7.27.0(@babel/core@7.26.10)(eslint@9.24.0(jiti@2.4.2))
       '@commitlint/cli': 19.8.0(@types/node@22.13.10)(typescript@5.8.3)
       '@commitlint/config-conventional': 19.8.0
       '@eslint/js': 9.23.0
-      '@remix-run/dev': 2.16.4(@remix-run/react@2.16.5(react-dom@19.1.0(react@19.0.0))(react@19.0.0)(typescript@5.8.3))(@remix-run/serve@2.16.4(typescript@5.8.3))(@types/node@22.13.13)(jiti@2.4.2)(typescript@5.8.3)(vite@6.2.5(@types/node@22.13.10)(jiti@2.4.2)(yaml@2.7.1))(yaml@2.7.1)
+      '@remix-run/dev': 2.16.4(@remix-run/react@2.16.5(react-dom@19.1.0(react@19.0.0))(react@19.0.0)(typescript@5.8.3))(@remix-run/serve@2.16.5(typescript@5.8.3))(@types/node@22.13.13)(jiti@2.4.2)(typescript@5.8.3)(vite@6.2.5(@types/node@22.13.10)(jiti@2.4.2)(yaml@2.7.1))(yaml@2.7.1)
       '@rushstack/eslint-patch': 1.11.0
       '@semantic-release/changelog': 6.0.3(semantic-release@24.2.3(typescript@5.8.3))
       '@semantic-release/git': 10.0.1(semantic-release@24.2.3(typescript@5.8.3))
@@ -8507,13 +8516,13 @@ snapshots:
       - wrangler
       - yaml
 
-  '@kurocado-studio/styleguide@2.3.3(@babel/core@7.26.10)(@commitlint/cli@19.8.0(@types/node@22.14.0)(typescript@5.8.3))(@commitlint/config-conventional@19.8.0)(@remix-run/react@2.16.5(react-dom@19.1.0(react@19.0.0))(react@19.0.0)(typescript@5.8.3))(@remix-run/serve@2.16.4(typescript@5.8.3))(eslint@9.24.0(jiti@2.4.2))(husky@9.1.7)(jiti@2.4.2)(prettier@3.5.3)(rollup@4.39.0)(semantic-release@23.1.1(typescript@5.8.3))(typescript@5.8.3)(vite@6.2.5(@types/node@22.14.0)(jiti@2.4.2)(yaml@2.7.1))(vitest@3.1.1(@types/debug@4.1.12)(@types/node@22.14.0)(jiti@2.4.2)(jsdom@26.0.0)(yaml@2.7.1))(yaml@2.7.1)':
+  '@kurocado-studio/styleguide@2.3.3(@babel/core@7.26.10)(@commitlint/cli@19.8.0(@types/node@22.14.0)(typescript@5.8.3))(@commitlint/config-conventional@19.8.0)(@remix-run/react@2.16.5(react-dom@19.1.0(react@19.0.0))(react@19.0.0)(typescript@5.8.3))(@remix-run/serve@2.16.5(typescript@5.8.3))(eslint@9.24.0(jiti@2.4.2))(husky@9.1.7)(jiti@2.4.2)(prettier@3.5.3)(rollup@4.39.0)(semantic-release@23.1.1(typescript@5.8.3))(typescript@5.8.3)(vite@6.2.5(@types/node@22.14.0)(jiti@2.4.2)(yaml@2.7.1))(vitest@3.1.1(@types/debug@4.1.12)(@types/node@22.14.0)(jiti@2.4.2)(jsdom@26.0.0)(yaml@2.7.1))(yaml@2.7.1)':
     dependencies:
       '@babel/eslint-parser': 7.27.0(@babel/core@7.26.10)(eslint@9.24.0(jiti@2.4.2))
       '@commitlint/cli': 19.8.0(@types/node@22.14.0)(typescript@5.8.3)
       '@commitlint/config-conventional': 19.8.0
       '@eslint/js': 9.23.0
-      '@remix-run/dev': 2.16.4(@remix-run/react@2.16.5(react-dom@19.1.0(react@19.0.0))(react@19.0.0)(typescript@5.8.3))(@remix-run/serve@2.16.4(typescript@5.8.3))(@types/node@22.13.13)(jiti@2.4.2)(typescript@5.8.3)(vite@6.2.5(@types/node@22.14.0)(jiti@2.4.2)(yaml@2.7.1))(yaml@2.7.1)
+      '@remix-run/dev': 2.16.4(@remix-run/react@2.16.5(react-dom@19.1.0(react@19.0.0))(react@19.0.0)(typescript@5.8.3))(@remix-run/serve@2.16.5(typescript@5.8.3))(@types/node@22.13.13)(jiti@2.4.2)(typescript@5.8.3)(vite@6.2.5(@types/node@22.14.0)(jiti@2.4.2)(yaml@2.7.1))(yaml@2.7.1)
       '@rushstack/eslint-patch': 1.11.0
       '@semantic-release/changelog': 6.0.3(semantic-release@23.1.1(typescript@5.8.3))
       '@semantic-release/git': 10.0.1(semantic-release@23.1.1(typescript@5.8.3))
@@ -8603,13 +8612,13 @@ snapshots:
       - wrangler
       - yaml
 
-  '@kurocado-studio/styleguide@2.3.3(@babel/core@7.26.10)(@commitlint/cli@19.8.0(@types/node@22.14.0)(typescript@5.8.3))(@commitlint/config-conventional@19.8.0)(@remix-run/react@2.16.5(react-dom@19.1.0(react@19.0.0))(react@19.0.0)(typescript@5.8.3))(@remix-run/serve@2.16.4(typescript@5.8.3))(eslint@9.24.0(jiti@2.4.2))(husky@9.1.7)(jiti@2.4.2)(prettier@3.5.3)(semantic-release@24.2.3(typescript@5.8.3))(typescript@5.8.3)(vite@6.2.5(@types/node@22.14.0)(jiti@2.4.2)(yaml@2.7.1))(vitest@3.1.1(@types/debug@4.1.12)(@types/node@22.14.0)(jiti@2.4.2)(jsdom@26.0.0)(yaml@2.7.1))(yaml@2.7.1)':
+  '@kurocado-studio/styleguide@2.3.3(@babel/core@7.26.10)(@commitlint/cli@19.8.0(@types/node@22.14.0)(typescript@5.8.3))(@commitlint/config-conventional@19.8.0)(@remix-run/react@2.16.5(react-dom@19.1.0(react@19.0.0))(react@19.0.0)(typescript@5.8.3))(@remix-run/serve@2.16.5(typescript@5.8.3))(eslint@9.24.0(jiti@2.4.2))(husky@9.1.7)(jiti@2.4.2)(prettier@3.5.3)(semantic-release@24.2.3(typescript@5.8.3))(typescript@5.8.3)(vite@6.2.5(@types/node@22.14.0)(jiti@2.4.2)(yaml@2.7.1))(vitest@3.1.1(@types/debug@4.1.12)(@types/node@22.14.0)(jiti@2.4.2)(jsdom@26.0.0)(yaml@2.7.1))(yaml@2.7.1)':
     dependencies:
       '@babel/eslint-parser': 7.27.0(@babel/core@7.26.10)(eslint@9.24.0(jiti@2.4.2))
       '@commitlint/cli': 19.8.0(@types/node@22.14.0)(typescript@5.8.3)
       '@commitlint/config-conventional': 19.8.0
       '@eslint/js': 9.23.0
-      '@remix-run/dev': 2.16.4(@remix-run/react@2.16.5(react-dom@19.1.0(react@19.0.0))(react@19.0.0)(typescript@5.8.3))(@remix-run/serve@2.16.4(typescript@5.8.3))(@types/node@22.13.13)(jiti@2.4.2)(typescript@5.8.3)(vite@6.2.5(@types/node@22.14.0)(jiti@2.4.2)(yaml@2.7.1))(yaml@2.7.1)
+      '@remix-run/dev': 2.16.4(@remix-run/react@2.16.5(react-dom@19.1.0(react@19.0.0))(react@19.0.0)(typescript@5.8.3))(@remix-run/serve@2.16.5(typescript@5.8.3))(@types/node@22.13.13)(jiti@2.4.2)(typescript@5.8.3)(vite@6.2.5(@types/node@22.14.0)(jiti@2.4.2)(yaml@2.7.1))(yaml@2.7.1)
       '@rushstack/eslint-patch': 1.11.0
       '@semantic-release/changelog': 6.0.3(semantic-release@24.2.3(typescript@5.8.3))
       '@semantic-release/git': 10.0.1(semantic-release@24.2.3(typescript@5.8.3))
@@ -9115,7 +9124,7 @@ snapshots:
       '@pnpm/network.ca-file': 1.0.2
       config-chain: 1.1.13
 
-  '@remix-run/dev@2.16.4(@remix-run/react@2.16.5(react-dom@19.1.0(react@19.0.0))(react@19.0.0)(typescript@5.8.3))(@remix-run/serve@2.16.4(typescript@5.8.3))(@types/node@22.13.10)(jiti@2.4.2)(typescript@5.8.3)(vite@6.2.5(@types/node@22.13.10)(jiti@2.4.2)(yaml@2.7.1))(yaml@2.7.1)':
+  '@remix-run/dev@2.16.4(@remix-run/react@2.16.5(react-dom@19.1.0(react@19.0.0))(react@19.0.0)(typescript@5.8.3))(@remix-run/serve@2.16.5(typescript@5.8.3))(@types/node@22.13.10)(jiti@2.4.2)(typescript@5.8.3)(vite@6.2.5(@types/node@22.13.10)(jiti@2.4.2)(yaml@2.7.1))(yaml@2.7.1)':
     dependencies:
       '@babel/core': 7.26.10
       '@babel/generator': 7.27.0
@@ -9175,7 +9184,7 @@ snapshots:
       vite-node: 3.0.0-beta.2(@types/node@22.13.10)(jiti@2.4.2)(yaml@2.7.1)
       ws: 7.5.10
     optionalDependencies:
-      '@remix-run/serve': 2.16.4(typescript@5.8.3)
+      '@remix-run/serve': 2.16.5(typescript@5.8.3)
       typescript: 5.8.3
       vite: 6.2.5(@types/node@22.13.10)(jiti@2.4.2)(yaml@2.7.1)
     transitivePeerDependencies:
@@ -9197,7 +9206,7 @@ snapshots:
       - utf-8-validate
       - yaml
 
-  '@remix-run/dev@2.16.4(@remix-run/react@2.16.5(react-dom@19.1.0(react@19.0.0))(react@19.0.0)(typescript@5.8.3))(@remix-run/serve@2.16.4(typescript@5.8.3))(@types/node@22.13.13)(jiti@2.4.2)(typescript@5.8.3)(vite@6.2.5(@types/node@22.13.10)(jiti@2.4.2)(yaml@2.7.1))(yaml@2.7.1)':
+  '@remix-run/dev@2.16.4(@remix-run/react@2.16.5(react-dom@19.1.0(react@19.0.0))(react@19.0.0)(typescript@5.8.3))(@remix-run/serve@2.16.5(typescript@5.8.3))(@types/node@22.13.13)(jiti@2.4.2)(typescript@5.8.3)(vite@6.2.5(@types/node@22.13.10)(jiti@2.4.2)(yaml@2.7.1))(yaml@2.7.1)':
     dependencies:
       '@babel/core': 7.26.10
       '@babel/generator': 7.27.0
@@ -9257,7 +9266,7 @@ snapshots:
       vite-node: 3.0.0-beta.2(@types/node@22.13.13)(jiti@2.4.2)(yaml@2.7.1)
       ws: 7.5.10
     optionalDependencies:
-      '@remix-run/serve': 2.16.4(typescript@5.8.3)
+      '@remix-run/serve': 2.16.5(typescript@5.8.3)
       typescript: 5.8.3
       vite: 6.2.5(@types/node@22.13.10)(jiti@2.4.2)(yaml@2.7.1)
     transitivePeerDependencies:
@@ -9279,7 +9288,7 @@ snapshots:
       - utf-8-validate
       - yaml
 
-  '@remix-run/dev@2.16.4(@remix-run/react@2.16.5(react-dom@19.1.0(react@19.0.0))(react@19.0.0)(typescript@5.8.3))(@remix-run/serve@2.16.4(typescript@5.8.3))(@types/node@22.13.13)(jiti@2.4.2)(typescript@5.8.3)(vite@6.2.5(@types/node@22.14.0)(jiti@2.4.2)(yaml@2.7.1))(yaml@2.7.1)':
+  '@remix-run/dev@2.16.4(@remix-run/react@2.16.5(react-dom@19.1.0(react@19.0.0))(react@19.0.0)(typescript@5.8.3))(@remix-run/serve@2.16.5(typescript@5.8.3))(@types/node@22.13.13)(jiti@2.4.2)(typescript@5.8.3)(vite@6.2.5(@types/node@22.14.0)(jiti@2.4.2)(yaml@2.7.1))(yaml@2.7.1)':
     dependencies:
       '@babel/core': 7.26.10
       '@babel/generator': 7.27.0
@@ -9339,7 +9348,7 @@ snapshots:
       vite-node: 3.0.0-beta.2(@types/node@22.13.13)(jiti@2.4.2)(yaml@2.7.1)
       ws: 7.5.10
     optionalDependencies:
-      '@remix-run/serve': 2.16.4(typescript@5.8.3)
+      '@remix-run/serve': 2.16.5(typescript@5.8.3)
       typescript: 5.8.3
       vite: 6.2.5(@types/node@22.14.0)(jiti@2.4.2)(yaml@2.7.1)
     transitivePeerDependencies:
@@ -9361,9 +9370,9 @@ snapshots:
       - utf-8-validate
       - yaml
 
-  '@remix-run/express@2.16.4(express@4.21.2)(typescript@5.8.3)':
+  '@remix-run/express@2.16.5(express@4.21.2)(typescript@5.8.3)':
     dependencies:
-      '@remix-run/node': 2.16.4(typescript@5.8.3)
+      '@remix-run/node': 2.16.5(typescript@5.8.3)
       express: 4.21.2
     optionalDependencies:
       typescript: 5.8.3
@@ -9383,6 +9392,18 @@ snapshots:
   '@remix-run/node@2.16.4(typescript@5.8.3)':
     dependencies:
       '@remix-run/server-runtime': 2.16.4(typescript@5.8.3)
+      '@remix-run/web-fetch': 4.4.2
+      '@web3-storage/multipart-parser': 1.0.0
+      cookie-signature: 1.2.2
+      source-map-support: 0.5.21
+      stream-slice: 0.1.2
+      undici: 6.21.2
+    optionalDependencies:
+      typescript: 5.8.3
+
+  '@remix-run/node@2.16.5(typescript@5.8.3)':
+    dependencies:
+      '@remix-run/server-runtime': 2.16.5(typescript@5.8.3)
       '@remix-run/web-fetch': 4.4.2
       '@web3-storage/multipart-parser': 1.0.0
       cookie-signature: 1.2.2
@@ -9418,10 +9439,10 @@ snapshots:
 
   '@remix-run/router@1.23.0': {}
 
-  '@remix-run/serve@2.16.4(typescript@5.8.3)':
+  '@remix-run/serve@2.16.5(typescript@5.8.3)':
     dependencies:
-      '@remix-run/express': 2.16.4(express@4.21.2)(typescript@5.8.3)
-      '@remix-run/node': 2.16.4(typescript@5.8.3)
+      '@remix-run/express': 2.16.5(express@4.21.2)(typescript@5.8.3)
+      '@remix-run/node': 2.16.5(typescript@5.8.3)
       chokidar: 3.6.0
       compression: 1.8.0
       express: 4.21.2
